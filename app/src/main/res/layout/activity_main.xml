@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/NProducto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtCantidad"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginHorizontal="40dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Cantidad"
+        android:background="@color/azulClaro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtProducto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@color/azulClaro"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Producto"
+        app:layout_constraintEnd_toEndOf="@id/txtCantidad"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/txtCantidad"
+        app:layout_constraintTop_toBottomOf="@id/txtCantidad" />
+
+    <EditText
+        android:id="@+id/txtPrecio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@color/azulClaro"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@id/txtProducto"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/txtProducto"
+        app:layout_constraintTop_toBottomOf="@id/txtProducto" />
+
+    <Button
+        android:id="@+id/btnAgregar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Agregar Producto"
+        app:layout_constraintEnd_toEndOf="@id/txtPrecio"
+        app:layout_constraintStart_toStartOf="@id/txtPrecio"
+        app:layout_constraintTop_toBottomOf="@id/txtPrecio" />
+
+    <TextView
+        android:id="@+id/txtVNumerDelProducto"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="#"
+        android:background="@color/azulFuerte"
+        app:layout_constraintStart_toStartOf="@id/txtPrecio"
+        app:layout_constraintTop_toBottomOf="@id/btnAgregar" />
+
+    <TextView
+        android:id="@+id/TxtVProducto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Producto"
+        android:background="@color/azulFuerte"
+        app:layout_constraintStart_toEndOf="@id/txtVNumerDelProducto"
+        app:layout_constraintEnd_toStartOf="@id/txtVPrecio"
+        app:layout_constraintTop_toTopOf="@id/txtVNumerDelProducto" />
+
+    <TextView
+        android:id="@+id/txtVPrecio"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="$"
+        android:background="@color/azulFuerte"
+        app:layout_constraintEnd_toEndOf="@id/txtPrecio"
+        app:layout_constraintTop_toTopOf="@id/txtVNumerDelProducto" />
+
+    <TextView
+        android:id="@+id/txtVNumerDelProducto1"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@color/azulClaro"
+        app:layout_constraintStart_toStartOf="@id/txtVNumerDelProducto"
+        app:layout_constraintEnd_toEndOf="@id/txtVNumerDelProducto"
+        app:layout_constraintTop_toBottomOf="@id/txtVNumerDelProducto" />
+
+    <TextView
+        android:id="@+id/txtVNombreProducto1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/azulClaro"
+        app:layout_constraintStart_toEndOf="@id/txtVNumerDelProducto1"
+        app:layout_constraintEnd_toStartOf="@id/txtVPrecioProducto1"
+        app:layout_constraintTop_toTopOf="@id/txtVNumerDelProducto1"
+        app:layout_constraintBottom_toBottomOf="@id/txtVNumerDelProducto1" />
+
+    <TextView
+        android:id="@+id/txtVPrecioProducto1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/azulClaro"
+        app:layout_constraintStart_toStartOf="@id/txtVPrecio"
+        app:layout_constraintEnd_toEndOf="@id/txtVPrecio"
+        app:layout_constraintTop_toTopOf="@id/txtVNumerDelProducto1"
+        app:layout_constraintBottom_toBottomOf="@id/txtVNumerDelProducto1" />
+
+    <TextView
+        android:id="@+id/txtVNumerDelProducto2"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@color/azulClaro"
+        app:layout_constraintStart_toStartOf="@id/txtVNumerDelProducto1"
+        app:layout_constraintEnd_toEndOf="@id/txtVNumerDelProducto1"
+        app:layout_constraintTop_toBottomOf="@id/txtVNumerDelProducto1" />
+
+    <TextView
+        android:id="@+id/txtVNombreProducto2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/azulClaro"
+        app:layout_constraintStart_toEndOf="@id/txtVNumerDelProducto2"
+        app:layout_constraintEnd_toStartOf="@id/txtVPrecioProducto2"
+        app:layout_constraintTop_toTopOf="@id/txtVNumerDelProducto2"
+        app:layout_constraintBottom_toBottomOf="@id/txtVNumerDelProducto2" />
+
+    <TextView
+        android:id="@+id/txtVPrecioProducto2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/azulClaro"
+        app:layout_constraintStart_toStartOf="@id/txtVPrecioProducto1"
+        app:layout_constraintEnd_toEndOf="@id/txtVPrecioProducto1"
+        app:layout_constraintTop_toTopOf="@id/txtVNumerDelProducto2"
+        app:layout_constraintBottom_toBottomOf="@id/txtVNumerDelProducto2" />
+
+    <TextView
+        android:id="@+id/txtVNumerDelProducto3"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@color/azulClaro"
+        app:layout_constraintStart_toStartOf="@id/txtVNumerDelProducto2"
+        app:layout_constraintEnd_toEndOf="@id/txtVNumerDelProducto2"
+        app:layout_constraintTop_toBottomOf="@id/txtVNumerDelProducto2" />
+
+    <TextView
+        android:id="@+id/txtVNombreProducto3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/azulClaro"
+        app:layout_constraintStart_toEndOf="@id/txtVNumerDelProducto3"
+        app:layout_constraintEnd_toStartOf="@id/txtVPrecioProducto3"
+        app:layout_constraintTop_toTopOf="@id/txtVNumerDelProducto3"
+        app:layout_constraintBottom_toBottomOf="@id/txtVNumerDelProducto3" />
+
+    <TextView
+        android:id="@+id/txtVPrecioProducto3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/azulClaro"
+        app:layout_constraintStart_toStartOf="@id/txtVPrecioProducto2"
+        app:layout_constraintEnd_toEndOf="@id/txtVPrecioProducto2"
+        app:layout_constraintTop_toTopOf="@id/txtVNumerDelProducto3"
+        app:layout_constraintBottom_toBottomOf="@id/txtVNumerDelProducto3" />
+
+    <TextView
+        android:id="@+id/txtVSubtotal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Subtotal:"
+        android:background="@color/azulFuerte"
+        app:layout_constraintStart_toStartOf="@id/txtVNombreProducto3"
+        app:layout_constraintEnd_toEndOf="@id/txtVNombreProducto3"
+        app:layout_constraintTop_toBottomOf="@id/txtVNombreProducto3" />
+
+    <TextView
+        android:id="@+id/txtVCalculoSubtotal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/azulClaro"
+        app:layout_constraintStart_toStartOf="@id/txtVPrecioProducto3"
+        app:layout_constraintEnd_toEndOf="@id/txtVPrecioProducto3"
+        app:layout_constraintTop_toTopOf="@id/txtVSubtotal"
+        app:layout_constraintBottom_toBottomOf="@id/txtVSubtotal" />
+
+    <TextView
+        android:id="@+id/txtViva"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="IVA:"
+        android:background="@color/azulFuerte"
+        app:layout_constraintStart_toStartOf="@id/txtVSubtotal"
+        app:layout_constraintEnd_toEndOf="@id/txtVSubtotal"
+        app:layout_constraintTop_toBottomOf="@id/txtVSubtotal" />
+
+    <TextView
+        android:id="@+id/txtVCalculoIVA"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/azulClaro"
+        app:layout_constraintStart_toStartOf="@id/txtVCalculoSubtotal"
+        app:layout_constraintEnd_toEndOf="@id/txtVCalculoSubtotal"
+        app:layout_constraintTop_toTopOf="@id/txtViva"
+        app:layout_constraintBottom_toBottomOf="@id/txtViva" />
+
+    <TextView
+        android:id="@+id/txtVTotal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Total:"
+        android:background="@color/azulFuerte"
+        app:layout_constraintStart_toStartOf="@id/txtViva"
+        app:layout_constraintEnd_toEndOf="@id/txtViva"
+        app:layout_constraintTop_toBottomOf="@id/txtViva" />
+
+    <TextView
+        android:id="@+id/txtVCalculoTotal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/azulClaro"
+        app:layout_constraintStart_toStartOf="@id/txtVCalculoIVA"
+        app:layout_constraintEnd_toEndOf="@id/txtVCalculoIVA"
+        app:layout_constraintTop_toTopOf="@id/txtVTotal"
+        app:layout_constraintBottom_toBottomOf="@id/txtVTotal" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Calcular"
+        android:background="@color/azulFuerte"
+        app:layout_constraintStart_toStartOf="@id/txtVTotal"
+        app:layout_constraintEnd_toEndOf="@id/txtVCalculoTotal"
+        app:layout_constraintTop_toBottomOf="@id/txtVTotal" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
